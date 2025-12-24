@@ -5,9 +5,9 @@ import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const team = [
   {
-    name: "Arjun Sharma",
-    role: "Founder & Lead Photographer",
-    avatar: "AS",
+    name: "Vedant Kothari",
+    role: "Founder ",
+    avatar: "VK",
   },
   {
     name: "Priya Patel",
@@ -86,7 +86,7 @@ const Team = () => {
 
               {/* Social links */}
               <div className="flex justify-center gap-3">
-                {[Linkedin, Twitter, Instagram].map((Icon, idx) => (
+                {[Instagram].map((Icon, idx) => (
                   <motion.a
                     key={idx}
                     href="#"
