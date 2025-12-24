@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, Twitter, Youtube, ArrowUp } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Youtube, ArrowUp, Facebook } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,8 +22,8 @@ const Footer = () => {
   const socialLinks = [
     { icon: Instagram, href: "#" },
     { icon: Linkedin, href: "#" },
-    { icon: Twitter, href: "#" },
-    { icon: Youtube, href: "#" },
+    
+    { icon: Facebook, href: "#" },
   ];
 
   return (
@@ -44,7 +44,7 @@ const Footer = () => {
             </motion.a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Crafting visual stories that captivate, connect, and convert. 
-              Your trusted creative partner since 2019.
+              Your trusted creative partner since 2023.
             </p>
             {/* Social links */}
             <div className="flex gap-3">
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2024 Snapitt. All rights reserved.
+            © 2025 Snapitt. All rights reserved.
           </p>
           
           {/* Back to top */}

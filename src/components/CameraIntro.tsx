@@ -85,7 +85,7 @@ const CameraIntro = ({ onComplete }: CameraIntroProps) => {
             scale: isAnimating ? 1 : 1.5,
             opacity: isAnimating ? 1 : 0,
           }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
         >
           <div className="text-center">
             <motion.h1

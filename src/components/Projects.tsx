@@ -1,12 +1,10 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
 import portfolioWedding from "@/assets/portfolio-wedding.jpg";
 import portfolioFashion from "@/assets/portfolio-fashion.jpg";
 import portfolioProduct from "@/assets/portfolio-product.jpg";
-import portfolioMarketing from "@/assets/portfolio-marketing.jpg";
 
 const projects = [
   {
@@ -14,24 +12,29 @@ const projects = [
     category: "Videography",
     image: portfolioWedding,
     description: "Cinematic wedding coverage capturing every precious moment.",
+    driveLink: "https://drive.google.com/",
   },
   {
     title: "Fashion Lookbook",
     category: "Photography",
     image: portfolioFashion,
     description: "High-fashion editorial shoot for luxury brand campaign.",
+    driveLink: "https://drive.google.com/",
   },
   {
     title: "Product Launch",
     category: "Photography",
     image: portfolioProduct,
     description: "Premium product photography for e-commerce success.",
+    driveLink: "https://drive.google.com/",
   },
   {
-    title: "Digital Growth Campaign",
-    category: "Marketing",
-    image: portfolioMarketing,
-    description: "360° digital marketing strategy with measurable ROI.",
+    title: "Election Campaign",
+    category: "Politics",
+    image: "politics.webp",
+    description: "Every Impression Counts. Every Vote Matters.",
+    driveLink:
+      "https://drive.google.com/drive/folders/1AfEmF-t-ctDyUZJdDZISyVrRkPhdPp51?usp=sharing",
   },
 ];
 
@@ -64,9 +67,12 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, i) => (
-            <motion.div
+            <motion.a
               key={project.title}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
+              href={project.driveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer block"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -89,22 +95,16 @@ const Projects = () => {
 
               {/* Content */}
               <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
-                {/* Category badge */}
                 <motion.span
                   className="inline-block w-fit px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium mb-3"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 + 0.2 }}
                 >
                   {project.category}
                 </motion.span>
 
-                {/* Title */}
                 <h3 className="font-display text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
 
-                {/* Description - shows on hover */}
                 <motion.p
                   className="text-muted-foreground text-sm"
                   initial={{ opacity: 0, y: 10 }}
@@ -117,7 +117,7 @@ const Projects = () => {
                   {project.description}
                 </motion.p>
 
-                {/* Arrow icon */}
+                {/* Arrow */}
                 <motion.div
                   className="absolute top-6 right-6 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground"
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -132,9 +132,9 @@ const Projects = () => {
                 </motion.div>
               </div>
 
-              {/* Border glow effect */}
+              {/* Border */}
               <div className="absolute inset-0 rounded-2xl border border-primary/0 group-hover:border-primary/30 transition-all duration-500" />
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

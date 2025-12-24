@@ -103,7 +103,7 @@ const Hero = () => {
 
           {/* Stats */}
           <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-16 md:mt-24"
+            className="grid grid-cols-4 md:grid-cols-4 gap-6 md:gap-8 mt-16 md:mt-24"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.6 }}
@@ -126,7 +126,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -143,7 +143,7 @@ const Hero = () => {
             transition={{ duration: 1.5, repeat: Infinity }}
           />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };
