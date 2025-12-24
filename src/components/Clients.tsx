@@ -3,9 +3,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const clients = [
-  "TechStart India",
-  "Ananya Fashion",
-  "Greenleaf Organics",
+  "Charkha Stories",
+  "Ritz Events",
   "Metro Hotels",
   "BlueSky Airlines",
   "Sunrise Media",

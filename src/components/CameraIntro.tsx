@@ -23,7 +23,7 @@ const CameraIntro = ({ onComplete }: CameraIntroProps) => {
       className="fixed inset-0 z-50 flex items-center justify-center bg-background"
       initial={{ opacity: 1 }}
       animate={{ opacity: isAnimating ? 1 : 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 1.2 }}
       style={{ pointerEvents: isAnimating ? "auto" : "none" }}
     >
       {/* Aperture blades container */}
@@ -43,7 +43,7 @@ const CameraIntro = ({ onComplete }: CameraIntroProps) => {
         />
 
         {/* Aperture blades */}
-        <svg
+        {/* <svg
           viewBox="0 0 200 200"
           className="w-full h-full"
           style={{ transform: "rotate(-22.5deg)" }}
@@ -75,7 +75,7 @@ const CameraIntro = ({ onComplete }: CameraIntroProps) => {
               />
             );
           })}
-        </svg>
+        </svg> */}
 
         {/* Center circle with logo text */}
         <motion.div
@@ -101,13 +101,14 @@ const CameraIntro = ({ onComplete }: CameraIntroProps) => {
               }}
               transition={{ duration: 2, repeat: isAnimating ? Infinity : 0 }}
             >
-              snap it
+              <img src="snapitt.jpg" alt="snapitt" className="h-40 w-40" />
+              {/* SnapItt */}
             </motion.h1>
             <motion.p
               className="text-muted-foreground mt-2 text-sm md:text-base"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 1.2 }}
             >
               Capture. Create. Conquer.
             </motion.p>

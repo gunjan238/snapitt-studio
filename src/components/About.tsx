@@ -43,7 +43,7 @@ const About = () => {
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
               Crafting Visual Stories{" "}
-              <span className="text-gradient">Since 2019</span>
+              <span className="text-gradient">Since 2023</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Snapitt is a full-service creative agency specializing in photography, 
@@ -59,15 +59,15 @@ const About = () => {
             {/* Stats inline */}
             <div className="flex flex-wrap gap-8">
               <div>
-                <div className="font-display text-2xl font-bold text-primary">5+</div>
+                <div className="font-display text-2xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div>
-                <div className="font-display text-2xl font-bold text-primary">50+</div>
+                <div className="font-display text-2xl font-bold text-primary">20+</div>
                 <div className="text-sm text-muted-foreground">Clients Served</div>
               </div>
               <div>
-                <div className="font-display text-2xl font-bold text-primary">150+</div>
+                <div className="font-display text-2xl font-bold text-primary">50+</div>
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
               </div>
             </div>

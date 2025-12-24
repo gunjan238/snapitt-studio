@@ -35,15 +35,20 @@ const Navbar = () => {
       transition={{ duration: 0.5, delay: 2.5 }}
     >
       <div className="container-custom mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <motion.a
-            href="#home"
-            className="font-display text-xl md:text-2xl font-bold text-primary"
-            whileHover={{ scale: 1.05 }}
-          >
-            snap it
-          </motion.a>
+  <div className="flex items-center justify-between h-16 md:h-20">
+    {/* Logo + Name */}
+    <motion.a
+      href="#home"
+      className="flex items-center gap-2 font-display text-xl md:text-2xl font-bold text-primary"
+      whileHover={{ scale: 1.05 }}
+    >
+      {/* <img
+        src="/snapitt.jpg"
+        alt="SnapItt Logo"
+        className="h-10 w-10 md:h-10 md:w-10 object-contain"
+      /> */}
+      <span>SnapItt</span>
+    </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">

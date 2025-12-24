@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Call Us",
-      value: "+91 98765 43210",
+      value: "+91 78209 71568",
     },
     {
       icon: Mail,

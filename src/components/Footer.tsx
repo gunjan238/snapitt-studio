@@ -40,7 +40,7 @@ const Footer = () => {
               className="inline-block font-display text-2xl font-bold text-primary mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              snap it
+              SnapItt
             </motion.a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Crafting visual stories that captivate, connect, and convert. 

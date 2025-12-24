@@ -109,10 +109,10 @@ const Hero = () => {
             transition={{ delay: 3.6 }}
           >
             {[
-              { number: "150+", label: "Projects Delivered" },
-              { number: "50+", label: "Happy Clients" },
-              { number: "5+", label: "Years Experience" },
-              { number: "15+", label: "Team Members" },
+              { number: "50+", label: "Projects Delivered" },
+              { number: "20+", label: "Happy Clients" },
+              { number: "2+", label: "Years Experience" },
+              { number: "10+", label: "Team Members" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold text-primary mb-1">
