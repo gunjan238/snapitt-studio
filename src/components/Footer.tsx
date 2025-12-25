@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "#" },
+    { icon: Instagram, href: "https://www.instagram.com/snapitt_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
     { icon: Linkedin, href: "#" },
     
     { icon: Facebook, href: "#" },
@@ -40,7 +40,7 @@ const Footer = () => {
               className="inline-block font-display text-2xl font-bold text-primary mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              SnapItt
+              SnapIt
             </motion.a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Crafting visual stories that captivate, connect, and convert. 
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2025 Snapitt. All rights reserved.
+            © 2025 Snapit. All rights reserved.
           </p>
           
           {/* Back to top */}

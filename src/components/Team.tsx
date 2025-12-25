@@ -8,6 +8,7 @@ const team = [
     name: "Vedant Kothari",
     role: "Founder ",
     avatar: "VK",
+    ref: "https://www.instagram.com/vedant_kothari_01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   },
   {
     name: "Priya Patel",
@@ -89,7 +90,7 @@ const Team = () => {
                 {[Instagram].map((Icon, idx) => (
                   <motion.a
                     key={idx}
-                    href="#"
+                    href={member.ref}
                     className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                     whileHover={{ y: -2 }}
                   >

@@ -8,7 +8,7 @@ const testimonials = [
     name: "Ravi & Meera",
     role: "Wedding Clients",
     content:
-      "Snapitt captured our wedding day beautifully. Every photo tells a story, and the video still makes us cry happy tears. Absolutely recommend them!",
+      "Snapit captured our wedding day beautifully. Every photo tells a story, and the video still makes us cry happy tears. Absolutely recommend them!",
     rating: 5,
   },
   {
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Sanjay Reddy",
     role: "Political Campaign Manager",
     content:
-      "Snapitt's videography team delivered impactful campaign videos that resonated with voters. Professional and reliable.",
+      "Snapit's videography team delivered impactful campaign videos that resonated with voters. Professional and reliable.",
     rating: 5,
   },
 ];

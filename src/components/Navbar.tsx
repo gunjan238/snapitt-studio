@@ -47,7 +47,7 @@ const Navbar = () => {
         alt="SnapItt Logo"
         className="h-10 w-10 md:h-10 md:w-10 object-contain"
       /> */}
-      <span>SnapItt</span>
+      <span>SnapIt</span>
     </motion.a>
 
           {/* Desktop Navigation */}
