@@ -87,12 +87,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.4 }}
           >
-            <Button variant="hero" size="xl" asChild>
+            {/* <Button variant="hero" size="xl" asChild>
               <a href="#contact" className="group">
                 Start Your Project
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
-            </Button>
+            </Button> */}
             <Button variant="glass" size="xl" asChild>
               <a href="#projects" className="group">
                 <Play className="w-5 h-5" />
